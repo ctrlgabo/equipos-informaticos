@@ -1,14 +1,14 @@
 /* ===== Paleta: cambiar los colores solo aquí ===== */
 :root {
-  --fondo:#F4F6F8;
-  --tarjeta:#FFFFFF;
-  --primario:#4A3F6B;
-  --primario-suave:#ECE9F2;
-  --secundario:#D08C60;
-  --crema:#FAF1E8;
-  --texto:#222B38;
-  --suave:#6B7280;
-  --borde:#E2E5EA;
+  --fondo: #F0F4F8;
+  --tarjeta: #FFFFFF;
+  --primario: #1E40AF;
+  --primario-suave: #DBEAFE;
+  --secundario: #0284C7;
+  --crema: #E0F2FE;
+  --texto: #1E293B;
+  --suave: #64748B;
+  --borde: #CBD5E1;
 }
 /* ===== Base ===== */
 * {
