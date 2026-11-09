@@ -1,4 +1,4 @@
-/* ===== Paleta: cambiar los colores solo aquí ===== */
+
 :root {
   --fondo: #F0F4F8;
   --tarjeta: #FFFFFF;
@@ -10,7 +10,7 @@
   --suave: #64748B;
   --borde: #CBD5E1;
 }
-/* ===== Base ===== */
+
 * {
   box-sizing: border-box;
 }
