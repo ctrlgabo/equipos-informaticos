@@ -1,0 +1,269 @@
+/* ===== Paleta: cambiar los colores solo aquí ===== */
+:root {
+  --fondo:#F4F6F8;
+  --tarjeta:#FFFFFF;
+  --primario:#4A3F6B;
+  --primario-suave:#ECE9F2;
+  --secundario:#D08C60;
+  --crema:#FAF1E8;
+  --texto:#222B38;
+  --suave:#6B7280;
+  --borde:#E2E5EA;
+}
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font:
+    16px/1.6 system-ui,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
+/* ===== Cabecera y menú ===== */
+.cabecera {
+  background: var(--primario);
+  color: #fff;
+  padding: 20px 24px;
+}
+.cabecera h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.cabecera p {
+  margin: 4px 0 0;
+  opacity: .9;
+}
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  background: #fff;
+  border-bottom: 3px solid var(--secundario);
+  padding: 6px 12px;
+}
+.menu a {
+  color: var(--primario);
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: .92rem;
+}
+.menu a:hover {
+  background: var(--primario-suave);
+}
+.menu a[aria-current=page] {
+  background: var(--primario);
+  color: #fff;
+}
+/* ===== Contenido ===== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.muestra {
+  margin: 0;
+  color: var(--suave);
+  font-size: .88rem;
+}
+.tarjeta {
+  background: var(--tarjeta);
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
+  padding: 18px;
+  margin: 14px 0;
+}
+h2 {
+  color: var(--primario);
+  margin-top: 0;
+}
+h3 {
+  color: var(--primario);
+  font-size: 1.05rem;
+  margin: 18px 0 6px;
+}
+.nota,
+.aviso,
+.interpretacion {
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+.nota {
+  background: var(--crema);
+  border-left: 5px solid var(--secundario);
+}
+.aviso {
+  background: var(--crema);
+  border: 1px solid var(--secundario);
+  border-left-width: 5px;
+}
+.interpretacion {
+  background: var(--primario-suave);
+  border-left: 5px solid var(--primario);
+}
+.interpretacion b:first-child {
+  color: var(--primario);
+}
+/* ===== Tablas ===== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: .88rem;
+}
+th,
+td {
+  border: 1px solid var(--borde);
+  padding: 5px 9px;
+  text-align: right;
+}
+th {
+  background: var(--primario-suave);
+  color: var(--primario);
+  text-align: center;
+}
+td.l {
+  text-align: left;
+}
+caption {
+  caption-side: bottom;
+  text-align: left;
+  color: var(--suave);
+  font-size: .82rem;
+  padding-top: 4px;
+}
+.desplazable {
+  overflow-x: auto;
+}
+.tabla-alta {
+  max-height: 420px;
+  overflow: auto;
+}
+#tabla-datos th {
+  cursor: pointer;
+}
+/* ===== Controles ===== */
+button,
+select,
+input {
+  font: inherit;
+  padding: 7px 11px;
+  border-radius: 6px;
+  border: 1px solid #CBD2DA;
+  background: #fff;
+  color: var(--texto);
+}
+button {
+  background: var(--primario);
+  color: #fff;
+  border-color: var(--primario);
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(1.15);
+}
+button.secundario {
+  background: #fff;
+  color: var(--primario);
+}
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0;
+}
+.rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 14px;
+}
+svg {
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.suave {
+  color: var(--suave);
+  font-size: .9rem;
+}
+.esp {
+  color: var(--suave);
+  font-size: .78em;
+}
+/* ===== Portada y paginación ===== */
+.enlaces {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+.enlaces a {
+  display: block;
+  padding: 12px 14px;
+  border: 1px solid var(--borde);
+  border-left: 5px solid var(--secundario);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--texto);
+}
+.enlaces a:hover {
+  background: var(--primario-suave);
+}
+.enlaces b {
+  display: block;
+  color: var(--primario);
+}
+.enlaces span {
+  font-size: .88rem;
+  color: var(--suave);
+}
+.paginacion {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 18px 0;
+}
+.paginacion a {
+  color: var(--primario);
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--primario);
+  border-radius: 6px;
+  padding: 7px 14px;
+}
+.paginacion a:hover {
+  background: var(--primario);
+  color: #fff;
+}
+.pie {
+  text-align: center;
+  color: var(--suave);
+  font-size: .85rem;
+  padding: 18px;
+}
+/* ===== Impresión ===== */
+@media print {
+  .menu,
+  .fila,
+  button,
+  .paginacion {
+    display: none;
+  }
+  body {
+    background: #fff;
+  }
+  .tarjeta {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}
