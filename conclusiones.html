@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conclusiones | Laboratorio de estadística</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <h1>Laboratorio virtual de estadística</h1>
+    <p>Mantenimiento preventivo y rendimiento de los equipos informáticos</p>
+  </header>
+  <nav class="menu" aria-label="Secciones">
+    <a href="index.html">Inicio</a>
+    <a href="cuestionario.html">Cuestionario</a>
+    <a href="base-datos.html">Base de datos</a>
+    <a href="frecuencias.html">Frecuencias</a>
+    <a href="descriptiva.html">Descriptiva</a>
+    <a href="pruebas.html">Pruebas estadísticas</a>
+    <a href="graficos.html">Gráficos</a>
+    <a href="conclusiones.html" aria-current="page">Conclusiones</a>
+  </nav>
+  <main>
+    <p id="muestra-activa" class="muestra"></p>
+    <section class="tarjeta">
+      <h2>Resumen de resultados</h2>
+      <p class="suave">Valores calculados con la muestra activa y las variables elegidas en la página de pruebas.</p>
+      <div id="resumen-resultados" class="desplazable"></div>
+    </section>
+    <section class="tarjeta">
+      <h2>Aspectos para redactar sus conclusiones</h2>
+      <p>Las conclusiones y limitaciones deben ser redactadas por el grupo con sus propias palabras. Estas preguntas ayudan a organizar las ideas:</p>
+      <ul>
+        <li>¿La asociación entre el plan de mantenimiento y el nivel de rendimiento es significativa? ¿Qué tan fuerte es?</li>
+        <li>¿Qué dirección e intensidad tiene la relación entre mantenimientos y tiempo de arranque? ¿Qué parte de la variabilidad explica el modelo?</li>
+        <li>¿Qué variables podrían estar influyendo y no están en el modelo (antigüedad, tipo de equipo, horas de uso)?</li>
+        <li>¿Qué predicciones son prudentes y cuáles serían una extrapolación?</li>
+      </ul>
+      <h3>Elementos a considerar en las limitaciones</h3>
+      <ul>
+        <li>Los datos son simulados con reglas definidas de antemano, por lo que no representan equipos reales.</li>
+        <li>Una asociación o correlación no demuestra causalidad.</li>
+        <li>Con muestras pequeñas, los resultados cambian de una muestra a otra (variabilidad muestral).</li>
+        <li>Pearson y la regresión simple solo captan relaciones lineales entre dos variables.</li>
+        <li>El chi-cuadrado requiere frecuencias esperadas suficientes en las celdas.</li>
+      </ul>
+    </section>
+    <div class="paginacion"><a href="graficos.html">&larr; Gráficos</a><span></span></div>
+  </main>
+  <footer class="pie">Datos sintéticos con fines educativos. Estadística Introductoria.</footer>
+  <script src="js/utilidades.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/estadistica.js"></script>
+  <script src="js/graficos.js"></script>
+  <script src="js/pag-conclusiones.js"></script>
+</body>
+</html>

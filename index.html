@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio | Laboratorio de estadística</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <h1>Laboratorio virtual de estadística</h1>
+    <p>Mantenimiento preventivo y rendimiento de los equipos informáticos</p>
+  </header>
+  <nav class="menu" aria-label="Secciones">
+    <a href="index.html" aria-current="page">Inicio</a>
+    <a href="cuestionario.html">Cuestionario</a>
+    <a href="base-datos.html">Base de datos</a>
+    <a href="frecuencias.html">Frecuencias</a>
+    <a href="descriptiva.html">Descriptiva</a>
+    <a href="pruebas.html">Pruebas estadísticas</a>
+    <a href="graficos.html">Gráficos</a>
+    <a href="conclusiones.html">Conclusiones</a>
+  </nav>
+  <main>
+    <p id="muestra-activa" class="muestra"></p>
+    <section class="tarjeta">
+      <h2>Presentación</h2>
+      <p><b>Objetivo estadístico:</b> analizar si el mantenimiento preventivo se asocia con un mejor rendimiento (menos fallas y arranque más rápido) en equipos informáticos, y practicar distribuciones de frecuencia, estadística descriptiva, chi-cuadrado, correlación de Pearson y regresión lineal simple.</p>
+      <div class="nota"><b>Nota:</b> los datos son <b>sintéticos y con fines educativos</b>. Se simulan con un modelo aleatorio; no son mediciones reales.</div>
+    </section>
+    <section class="tarjeta">
+      <h2>Contenido de la aplicación</h2>
+      <div class="enlaces">
+        <a href="cuestionario.html"><b>Cuestionario</b><span>11 preguntas con su variable, tipo y codificación.</span></a>
+        <a href="base-datos.html"><b>Base de datos</b><span>Tabla ordenable y filtrable, nueva muestra, CSV e impresión.</span></a>
+        <a href="frecuencias.html"><b>Frecuencias</b><span>Tablas de frecuencias, barras, circular, histograma y polígono.</span></a>
+        <a href="descriptiva.html"><b>Descriptiva</b><span>Tendencia central y dispersión de las variables.</span></a>
+        <a href="pruebas.html"><b>Pruebas estadísticas</b><span>Chi-cuadrado, correlación de Pearson y regresión lineal.</span></a>
+        <a href="graficos.html"><b>Gráficos</b><span>Dispersión, recta de regresión y comparaciones.</span></a>
+        <a href="conclusiones.html"><b>Conclusiones</b><span>Resumen de resultados y aspectos para redactar limitaciones.</span></a>
+      </div>
+    </section>
+    <section class="tarjeta">
+      <h2>Cómo usar la aplicación</h2>
+      <ol>
+        <li>Revise el cuestionario para conocer las variables.</li>
+        <li>Explore la base de datos y recorra las secciones en orden con el menú o los botones de navegación.</li>
+        <li>En las pruebas y los gráficos puede elegir las variables con los menús desplegables.</li>
+        <li>Para obtener cifras reproducibles (por ejemplo, las de un informe), use en <a href="base-datos.html">Base de datos</a> el botón <b>Restaurar muestra original</b>. Cada vez que se genera una nueva muestra, todos los resultados cambian.</li>
+      </ol>
+      <p class="suave">La muestra activa y las variables elegidas se recuerdan entre páginas mientras use el mismo navegador.</p>
+    </section>
+    <div class="paginacion"><span></span><a href="cuestionario.html">Cuestionario &rarr;</a></div>
+  </main>
+  <footer class="pie">Datos sintéticos con fines educativos. Estadística Introductoria.</footer>
+  <script src="js/utilidades.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/estadistica.js"></script>
+  <script src="js/pag-inicio.js"></script>
+</body>
+</html>

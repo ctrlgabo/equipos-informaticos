@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pruebas estadísticas | Laboratorio de estadística</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <h1>Laboratorio virtual de estadística</h1>
+    <p>Mantenimiento preventivo y rendimiento de los equipos informáticos</p>
+  </header>
+  <nav class="menu" aria-label="Secciones">
+    <a href="index.html">Inicio</a>
+    <a href="cuestionario.html">Cuestionario</a>
+    <a href="base-datos.html">Base de datos</a>
+    <a href="frecuencias.html">Frecuencias</a>
+    <a href="descriptiva.html">Descriptiva</a>
+    <a href="pruebas.html" aria-current="page">Pruebas estadísticas</a>
+    <a href="graficos.html">Gráficos</a>
+    <a href="conclusiones.html">Conclusiones</a>
+  </nav>
+  <main>
+    <p id="muestra-activa" class="muestra"></p>
+    <section class="tarjeta">
+      <h2>Pruebas estadísticas</h2>
+      <h3>1. Chi-cuadrado de independencia</h3>
+      <div class="fila"><select id="sel-c1" aria-label="Primera variable cualitativa"></select> contra <select id="sel-c2" aria-label="Segunda variable cualitativa"></select></div>
+      <div id="res-chi"></div>
+    </section>
+    <section class="tarjeta">
+      <h3>2. Correlación lineal de Pearson y 3. Regresión lineal simple</h3>
+      <div class="fila">Variable x (explicativa): <select id="sel-x" aria-label="Variable x"></select> Variable y (respuesta): <select id="sel-y" aria-label="Variable y"></select></div>
+      <div id="res-pearson"></div>
+      <div id="res-regresion"></div>
+    </section>
+    <div class="paginacion"><a href="descriptiva.html">&larr; Descriptiva</a><a href="graficos.html">Gráficos &rarr;</a></div>
+  </main>
+  <footer class="pie">Datos sintéticos con fines educativos. Estadística Introductoria.</footer>
+  <script src="js/utilidades.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/estadistica.js"></script>
+  <script src="js/graficos.js"></script>
+  <script src="js/pag-pruebas.js"></script>
+</body>
+</html>

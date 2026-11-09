@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Base de datos | Laboratorio de estadística</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <h1>Laboratorio virtual de estadística</h1>
+    <p>Mantenimiento preventivo y rendimiento de los equipos informáticos</p>
+  </header>
+  <nav class="menu" aria-label="Secciones">
+    <a href="index.html">Inicio</a>
+    <a href="cuestionario.html">Cuestionario</a>
+    <a href="base-datos.html" aria-current="page">Base de datos</a>
+    <a href="frecuencias.html">Frecuencias</a>
+    <a href="descriptiva.html">Descriptiva</a>
+    <a href="pruebas.html">Pruebas estadísticas</a>
+    <a href="graficos.html">Gráficos</a>
+    <a href="conclusiones.html">Conclusiones</a>
+  </nav>
+  <main>
+    <p id="muestra-activa" class="muestra"></p>
+    <section class="tarjeta">
+      <h2>Base de datos (sintética)</h2>
+      <div class="fila">
+        <label>N.º de registros (40 a 300) <input id="num-registros" type="number" min="40" max="300" value="60" style="width:90px"></label>
+        <button id="btn-nueva">Generar nueva muestra</button>
+        <button id="btn-restaurar" class="secundario">Restaurar muestra original</button>
+        <button id="btn-csv" class="secundario">Descargar CSV</button>
+        <button id="btn-imprimir" class="secundario">Imprimir</button>
+      </div>
+      <div class="fila">
+        <input id="filtro-texto" placeholder="Buscar...">
+        <select id="filtro-tipo" aria-label="Filtrar por tipo"><option value="">Todos los tipos</option><option>Escritorio</option><option>Portátil</option><option>Servidor</option></select>
+        <select id="filtro-plan" aria-label="Filtrar por plan"><option value="">Con y sin plan</option><option>Con plan</option><option>Sin plan</option></select>
+        <span id="contador" class="suave"></span>
+      </div>
+      <div class="desplazable tabla-alta"><table id="tabla-datos"></table></div>
+      <p class="suave">Haga clic en un encabezado para ordenar. El símbolo «—» indica dato faltante (cerca del 3 % del uso de RAM); los cálculos lo excluyen. La muestra original es de 60 registros con semilla 2080.</p>
+    </section>
+    <div class="paginacion"><a href="cuestionario.html">&larr; Cuestionario</a><a href="frecuencias.html">Frecuencias &rarr;</a></div>
+  </main>
+  <footer class="pie">Datos sintéticos con fines educativos. Estadística Introductoria.</footer>
+  <script src="js/utilidades.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/estadistica.js"></script>
+  <script src="js/graficos.js"></script>
+  <script src="js/pag-base-datos.js"></script>
+</body>
+</html>

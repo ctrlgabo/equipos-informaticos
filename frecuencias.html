@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frecuencias | Laboratorio de estadística</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <h1>Laboratorio virtual de estadística</h1>
+    <p>Mantenimiento preventivo y rendimiento de los equipos informáticos</p>
+  </header>
+  <nav class="menu" aria-label="Secciones">
+    <a href="index.html">Inicio</a>
+    <a href="cuestionario.html">Cuestionario</a>
+    <a href="base-datos.html">Base de datos</a>
+    <a href="frecuencias.html" aria-current="page">Frecuencias</a>
+    <a href="descriptiva.html">Descriptiva</a>
+    <a href="pruebas.html">Pruebas estadísticas</a>
+    <a href="graficos.html">Gráficos</a>
+    <a href="conclusiones.html">Conclusiones</a>
+  </nav>
+  <main>
+    <p id="muestra-activa" class="muestra"></p>
+    <section class="tarjeta">
+      <h2>Distribuciones de frecuencia</h2>
+      <h3>Variable cualitativa</h3>
+      <div class="fila"><select id="sel-cual" aria-label="Variable cualitativa"></select></div>
+      <div id="tab-cual"></div>
+      <div class="rejilla" id="graf-cual"></div>
+      <div class="interpretacion" id="interp-cual"></div>
+      <h3>Variable cuantitativa agrupada en intervalos</h3>
+      <div class="fila"><select id="sel-cuant" aria-label="Variable cuantitativa"></select></div>
+      <div id="tab-cuant"></div>
+      <div id="graf-cuant"></div>
+      <div class="interpretacion" id="interp-cuant"></div>
+    </section>
+    <div class="paginacion"><a href="base-datos.html">&larr; Base de datos</a><a href="descriptiva.html">Descriptiva &rarr;</a></div>
+  </main>
+  <footer class="pie">Datos sintéticos con fines educativos. Estadística Introductoria.</footer>
+  <script src="js/utilidades.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/estadistica.js"></script>
+  <script src="js/graficos.js"></script>
+  <script src="js/pag-frecuencias.js"></script>
+</body>
+</html>

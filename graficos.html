@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gráficos | Laboratorio de estadística</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <h1>Laboratorio virtual de estadística</h1>
+    <p>Mantenimiento preventivo y rendimiento de los equipos informáticos</p>
+  </header>
+  <nav class="menu" aria-label="Secciones">
+    <a href="index.html">Inicio</a>
+    <a href="cuestionario.html">Cuestionario</a>
+    <a href="base-datos.html">Base de datos</a>
+    <a href="frecuencias.html">Frecuencias</a>
+    <a href="descriptiva.html">Descriptiva</a>
+    <a href="pruebas.html">Pruebas estadísticas</a>
+    <a href="graficos.html" aria-current="page">Gráficos</a>
+    <a href="conclusiones.html">Conclusiones</a>
+  </nav>
+  <main>
+    <p id="muestra-activa" class="muestra"></p>
+    <section class="tarjeta">
+      <h2>Gráficos</h2>
+      <div class="fila">Variable x: <select id="sel-x" aria-label="Variable x"></select> Variable y: <select id="sel-y" aria-label="Variable y"></select></div>
+      <div class="rejilla"><div id="graf-dispersion"></div><div id="graf-recta"></div></div>
+      <div class="interpretacion" id="interp-graf"></div>
+      <h3>Comparaciones visuales (promedio de la variable y elegida)</h3>
+      <div class="rejilla" id="graf-comparaciones"></div>
+      <div class="interpretacion" id="interp-comp"></div>
+      <p class="suave">Las barras, el gráfico circular, el histograma y el polígono de frecuencias están en la sección <a href="frecuencias.html">Frecuencias</a>.</p>
+    </section>
+    <div class="paginacion"><a href="pruebas.html">&larr; Pruebas estadísticas</a><a href="conclusiones.html">Conclusiones &rarr;</a></div>
+  </main>
+  <footer class="pie">Datos sintéticos con fines educativos. Estadística Introductoria.</footer>
+  <script src="js/utilidades.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/estadistica.js"></script>
+  <script src="js/graficos.js"></script>
+  <script src="js/pag-graficos.js"></script>
+</body>
+</html>
